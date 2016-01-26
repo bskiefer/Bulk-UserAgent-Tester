@@ -8,4 +8,6 @@ Press submit and results will be processed in test.php
 # Increase execution time
 There are over 4000 user agents to test and you will need to increase your timeout settings to test them all.
 
-Add ini_set('max_execution_time', 300);" (the number represents seconds, 300 seconds = 5 minutes) to the top of test.php
+Add ini_set('max_execution_time', 300);
+
+(the number represents seconds, 300 seconds = 5 minutes) to the top of test.php
