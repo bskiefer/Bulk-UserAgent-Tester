@@ -3,13 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/jquery.tablesorter.min.js"></script>
+	<script src="js/jquery.metadata.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<table>
+	<script>
+		$(document).ready(function() { 
+		        $("#table").tablesorter(); 
+		}); 
+	</script>
+<table id="table" class="tablesorter">
 	<thead>
 		<tr>
-			<td>Status</td>
-			<td>User-Agent</td>
+			<th>Status</th>
+			<th>User-Agent</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -47,10 +56,12 @@ foreach ($only_agents as $val) {
   // Get the status code and set the varible $status
 	if ( $get_http_response_code == 200 ) {
 	  $status = "Success";
+	  $color = "green";
 	} else {
 	  $status = "Failure";
+	  $color = "red";
 	}
-	echo "<tr><td>" . $status . "</td><td>" . $val ."</td></tr>";
+	echo "<tr><td class='".$color."'>" . $status . "</td><td>" . $val ."</td></tr>";
 }
 
 // Get the status code from header
@@ -62,5 +73,6 @@ function get_http_response_code($domain1) {
 ?>
 		</tbody>
 	</table>
+	
 </body>
 </html>
