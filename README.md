@@ -12,5 +12,16 @@ ini_set('max_execution_time', 300);
 
 The number represents seconds, 300 seconds = 5 minutes
 
+# To-do
+Sortable tables
+
+Less resource exhuasting method to test headers
+
+More info on user-agent and status
+
+Ajax loading
+
+Memory dump and exporting
+
 # Thanks to...
 http://www.user-agents.org/ for providing a huge list of user agents!
