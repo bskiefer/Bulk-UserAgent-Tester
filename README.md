@@ -11,3 +11,6 @@ There are over 4000 user agents to test and you will need to increase your timeo
 ini_set('max_execution_time', 300);
 
 The number represents seconds, 300 seconds = 5 minutes
+
+# Thanks to...
+http://www.user-agents.org/ for providing a huge list of user agents!
