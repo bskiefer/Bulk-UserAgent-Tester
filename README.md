@@ -1,6 +1,8 @@
 # bulkuseragenttest
 Testing bulk user agents to test your website against many bots on the internet by checking the status code.
 
+Demo: http://semrun.com/assets/user_agent_tester/
+
 # How to use?
 Enter your website into the form located in index.php
 Press submit and results will be processed in test.php
